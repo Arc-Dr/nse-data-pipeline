@@ -4,8 +4,7 @@ import psycopg2
 from psycopg2.extras import execute_values
 
 # ================= DB CONNECTION =================
-conn = psycopg2.connect(
-    "postgresql://neondb_owner:npg_IFJasBq3XS0D@ep-cool-bar-a1laxmw2-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+onn = psycopg2.connect(os.environ["DB_URL"]
 )
 
 cur = conn.cursor()
