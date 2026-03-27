@@ -1,5 +1,6 @@
 import yfinance as yf
 import pandas as pd
+import os
 import psycopg2
 from psycopg2.extras import execute_values
 
