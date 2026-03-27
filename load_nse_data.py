@@ -5,7 +5,7 @@ import psycopg2
 from psycopg2.extras import execute_values
 
 # ================= DB CONNECTION =================
-onn = psycopg2.connect(os.environ["DB_URL"]
+conn = psycopg2.connect(os.environ["DB_URL"]
 )
 
 cur = conn.cursor()
